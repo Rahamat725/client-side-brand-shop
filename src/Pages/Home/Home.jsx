@@ -1,4 +1,6 @@
+import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
+import Banner from "./Banner";
 
 
 const Home = () => {
@@ -6,7 +8,9 @@ const Home = () => {
         <div>
           
             <Navbar></Navbar>
+            <Banner></Banner>
             <h2>This is Home</h2>
+            <Footer></Footer>
         </div>
     );
 };
