@@ -20,6 +20,7 @@ import Hp from './Pages/Brands/Hp';
 import Dell from './Pages/Brands/Dell';
 import Samsung from './Pages/Brands/Samsung';
 import Sony from './Pages/Brands/Sony';
+import AddProduct from './Pages/AddProducts/AddProduct';
 
 const router = createBrowserRouter([
   {
@@ -42,6 +43,10 @@ const router = createBrowserRouter([
       {
         path:'/addbrand',
         element:<AddBrands></AddBrands>
+      },
+      {
+        path:'/addproduct',
+        element:<AddProduct></AddProduct>
       },
       {
         path:'/apple',
