@@ -14,6 +14,12 @@ import Login from './Pages/login/Login';
 import Register from './Pages/Register/Register';
 import AuthProvider from './Provider/AuthProvider';
 import AddBrands from './Pages/Home/AddBrands';
+import Apple from './Pages/Brands/Apple';
+import Boat from './Pages/Brands/Boat';
+import Hp from './Pages/Brands/Hp';
+import Dell from './Pages/Brands/Dell';
+import Samsung from './Pages/Brands/Samsung';
+import Sony from './Pages/Brands/Sony';
 
 const router = createBrowserRouter([
   {
@@ -36,6 +42,30 @@ const router = createBrowserRouter([
       {
         path:'/addbrand',
         element:<AddBrands></AddBrands>
+      },
+      {
+        path:'/apple',
+        element: <Apple></Apple>
+      },
+      {
+        path:'/boAt',
+        element:<Boat></Boat>
+      },
+      {
+        path:'/hp',
+        element:<Hp></Hp>
+      },
+      {
+        path:'/dell',
+        element:<Dell></Dell>
+      },
+      {
+        path:'/samsung',
+        element: <Samsung></Samsung>
+      },
+      {
+        path:'/sony',
+        element: <Sony></Sony>
       }
     ]
   },
