@@ -14,6 +14,18 @@ const AddProduct = () => {
         const photo = form.photo.value;
         const product = {brand,productName,type,price,description,rating,photo};
         console.log(product);
+
+        fetch('http://localhost:5000/brands', {
+          method: 'POST',
+          headers:{
+            'content-type':'application/json'
+          },
+          body: JSON.stringify(product)
+        })
+        .then(res => res.json())
+        .then(data => {
+          console.log(data);
+        })
     }
     return (
         <div className="">
@@ -28,38 +40,38 @@ const AddProduct = () => {
                 <input type="text" placeholder="Brand Name" name="brand" className="input input-bordered" required />
               </div>
               <div className="form-control">
-                <label className="label">
+                <label className="">
                   <span className="lpabel-text">Product Name</span>
                 </label>
                 <input type="text" placeholder="Product Name" name="productName" className="input input-bordered" required />
               </div>
               <div className="form-control">
-                <label className="label">
+                <label className="">
                   <span className="label-text">Type</span>
                 </label>
                 <input type="text" placeholder="Type" name="type" className="input input-bordered" required />
               </div>
               <div className="form-control">
-                <label className="label">
+                <label className="">
                   <span className="label-text">Price</span>
                 </label>
                 <input type="number" placeholder="Price" name="price" className="input input-bordered" required />
               </div>
               <div className="form-control">
-                <label className="label">
+                <label className="">
                   <span className="label-text">Short Description</span>
                 </label>
                 <input type="text" placeholder="Short Description" name="description" className="input input-bordered" required />
               </div>
               <div className="form-control">
-                <label className="label">
+                <label className="">
                   <span className="label-text">Rating</span>
                 </label>
                 <input type="text" placeholder="Rating" name="rating" className="input input-bordered" required />
               </div>
 
               <div className="form-control">
-                <label className="label">
+                <label className="">
                   <span className="label-text">Product Image</span>
                 </label>
                 <input type="text" placeholder="Product URL" name="photo" className="input input-bordered" required />
