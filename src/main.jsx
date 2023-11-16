@@ -21,6 +21,7 @@ import Dell from './Pages/Brands/Dell';
 import Samsung from './Pages/Brands/Samsung';
 import Sony from './Pages/Brands/Sony';
 import AddProduct from './Pages/AddProducts/AddProduct';
+import Update from './Pages/Update/Update';
 
 const router = createBrowserRouter([
   {
@@ -72,6 +73,11 @@ const router = createBrowserRouter([
       {
         path:'/sony',
         element: <Sony></Sony>
+      },
+      {
+        path:'/productUpdate/:id',
+        element: <Update></Update>,
+        loader:({params})=> fetch(`http://localhost:5000/brands/${params.id}`)
       }
     ]
   },

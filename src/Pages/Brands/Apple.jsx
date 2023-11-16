@@ -1,10 +1,13 @@
-import { useLoaderData } from "react-router-dom";
+import { Link,  useLoaderData } from "react-router-dom";
 
 
 const Apple = () => {
     const loaderData = useLoaderData();
     const products = loaderData.filter(product => product.brand == 'Apple');
     console.log(products)
+    const handleUpdate = id => {
+        console.log(id);
+    }
     return (
         <div>
             <h2>Here are all Apple products: {products.length}</h2>
@@ -28,7 +31,9 @@ const Apple = () => {
                                 <p>{product.description.slice(0, 200)}...</p>
                                 <div className="card-actions justify-end">
                                     <div className="btn btn-neutral">Details </div>
-                                    <div className="btn btn-success">Update</div>
+                                    <Link to={`/productUpdate/${product._id}`}>
+                                    <div onClick={()=>handleUpdate(product._id)} className="btn btn-success">Update</div>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
