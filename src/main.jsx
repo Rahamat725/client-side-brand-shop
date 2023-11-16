@@ -50,7 +50,8 @@ const router = createBrowserRouter([
       },
       {
         path:'/apple',
-        element: <Apple></Apple>
+        element: <Apple></Apple>,
+        loader: () => fetch('http://localhost:5000/brands')
       },
       {
         path:'/boAt',
