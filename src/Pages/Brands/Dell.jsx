@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 
 const Dell = () => {
     const loaderData = useLoaderData();
-    const products = loaderData.filter(product => product.brand == 'HP');
+    const products = loaderData.filter(product => product.brand == 'Dell');
     console.log(loaderData)
     console.log(products)
     return (
