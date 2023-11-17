@@ -30,7 +30,9 @@ const Apple = () => {
                                 </div>
                                 <p>{product.description.slice(0, 200)}...</p>
                                 <div className="card-actions justify-end">
+                                    <Link to={`/details/${product._id}`}>
                                     <div className="btn btn-neutral">Details </div>
+                                    </Link>
                                     <Link to={`/productUpdate/${product._id}`}>
                                     <div onClick={()=>handleUpdate(product._id)} className="btn btn-success">Update</div>
                                     </Link>

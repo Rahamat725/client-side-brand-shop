@@ -29,8 +29,8 @@ console.log(loadedData)
         })
         .then(res => res.json())
         .then(data => {
-          console.log(data.modifiedCount);
-        if(data){
+          console.log(data);
+        if(data.modifiedCount){
           toast.success('Product Updated Successfully !!');
         }
         // form.reset();

@@ -22,6 +22,7 @@ import Samsung from './Pages/Brands/Samsung';
 import Sony from './Pages/Brands/Sony';
 import AddProduct from './Pages/AddProducts/AddProduct';
 import Update from './Pages/Update/Update';
+import Details from './Pages/Brands/Details';
 
 const router = createBrowserRouter([
   {
@@ -77,6 +78,11 @@ const router = createBrowserRouter([
       {
         path:'/productUpdate/:id',
         element: <Update></Update>,
+        loader:({params})=> fetch(`http://localhost:5000/brands/${params.id}`)
+      },
+      {
+        path:'/details/:id',
+        element: <Details></Details>,
         loader:({params})=> fetch(`http://localhost:5000/brands/${params.id}`)
       }
     ]
