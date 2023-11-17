@@ -1,10 +1,13 @@
+// import { Link, useLoaderData } from "react-router-dom";
+// import Navbar from "../Navbar/Navbar";
 
 
 const Samsung = () => {
+ 
     return (
-        <div>
-            <h2>All samsung products</h2>
-        </div>
+   <div>
+
+   </div>
     );
 };
 

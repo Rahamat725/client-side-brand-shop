@@ -1,10 +1,13 @@
+// import { Link, useLoaderData } from "react-router-dom";
+// import Navbar from "../Navbar/Navbar";
 
 
 const Hp = () => {
+  
     return (
-        <div>
-            <h2>All hp products</h2>
-        </div>
+    <div>
+
+    </div>
     );
 };
 

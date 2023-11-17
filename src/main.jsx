@@ -57,23 +57,28 @@ const router = createBrowserRouter([
       },
       {
         path:'/boAt',
-        element:<Boat></Boat>
+        element:<Boat></Boat>,
+        loader: () => fetch('http://localhost:5000/brands')
       },
       {
         path:'/hp',
-        element:<Hp></Hp>
+        element:<Hp></Hp>,
+        loader: () => fetch('http://localhost:5000/brands')
       },
       {
         path:'/dell',
-        element:<Dell></Dell>
+        element:<Dell></Dell>,
+        loader: () => fetch('http://localhost:5000/brands')
       },
       {
         path:'/samsung',
-        element: <Samsung></Samsung>
+        element: <Samsung></Samsung>,
+        loader: () => fetch('http://localhost:5000/brands')
       },
       {
         path:'/sony',
-        element: <Sony></Sony>
+        element: <Sony></Sony>,
+        loader: () => fetch('http://localhost:5000/brands')
       },
       {
         path:'/productUpdate/:id',

@@ -1,21 +1,22 @@
 import { Link,  useLoaderData } from "react-router-dom";
+import Navbar from "../Navbar/Navbar";
 
 
 const Apple = () => {
     const loaderData = useLoaderData();
     const products = loaderData.filter(product => product.brand == 'Apple');
+    console.log(loaderData)
     console.log(products)
-    const handleUpdate = id => {
-        console.log(id);
-    }
+   
     return (
-        <div>
-            <h2>Here are all Apple products: {products.length}</h2>
-            <div className="grid grid-cols-2 gap-4">
+        <div className="">
+            <Navbar></Navbar>
+            <div className=" ">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 ">
                 {
                     products.map(product =>
-                        <div key={product._id} className="card w-96 bg-base-100 shadow-xl">
-                            <h2 className="card-title ">
+                        <div key={product._id} className="card lg:w-96  bg-base-100 shadow-xl">
+                            <h2 className="text-center lg:text-2xl text-xl font-bold mb-5">
                                 {product.productName}
                             </h2>
                             <figure><img src={product.photo} alt="Product image" /></figure>
@@ -34,7 +35,7 @@ const Apple = () => {
                                     <div className="btn btn-neutral">Details </div>
                                     </Link>
                                     <Link to={`/productUpdate/${product._id}`}>
-                                    <div onClick={()=>handleUpdate(product._id)} className="btn btn-success">Update</div>
+                                    <button className="btn btn-success">Update</button>
                                     </Link>
                                 </div>
                             </div>
@@ -42,6 +43,7 @@ const Apple = () => {
 
                     )
                 }
+            </div>
             </div>
         </div>
     );

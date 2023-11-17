@@ -1,10 +1,13 @@
+// import { Link, useLoaderData } from "react-router-dom";
+// import Navbar from "../Navbar/Navbar";
 
 
 const Dell = () => {
+   
     return (
-        <div>
-            <h2>All Dell products</h2>
-        </div>
+    <div>
+
+    </div>
     );
 };
 

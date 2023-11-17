@@ -10,7 +10,7 @@ const Navbar = () => {
         <li><NavLink to='/'>Home</NavLink></li>
         <li><NavLink to='/addproduct'>Add Product</NavLink></li>
         <li><NavLink to='/mycart'>My Cart</NavLink></li>
-        <li><NavLink to='/addbrand'>Add Brand</NavLink></li>
+        {/* <li><NavLink to='/addbrand'>Add Brand</NavLink></li> */}
     </>
    const handleLogout = () => {
     logOut()
