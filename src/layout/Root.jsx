@@ -4,7 +4,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const Root = () => {
     return (
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto ">
             <Outlet></Outlet>
             <ToastContainer
               position="bottom-center"

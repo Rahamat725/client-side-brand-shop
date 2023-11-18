@@ -2,16 +2,16 @@ import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import Banner from "./Banner";
 import Brands from "../Brands/Brands";
-
+{/* <link rel="stylesheet" href="/src/App.css" /> */}
 
 const Home = () => {
     return (
-        <div>
+        <div className="">
           
             <Navbar></Navbar>
             <Banner></Banner>
             <Brands></Brands>
-            <h2>This is Home</h2>
+           
             <Footer></Footer>
         </div>
     );

@@ -46,6 +46,7 @@ const MyCarts = () => {
      
         <div className="mt-5">
            <Navbar></Navbar>
+           <h2 className="text-center text-3xl mb-5">My Carts</h2>
             <div className="grid lg:grid-cols-2 gap-3">
               {
                 products.map(product => 

@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Provider/AuthProvider";
 import { toast } from "react-toastify";
 import { updateProfile } from "firebase/auth";
@@ -8,6 +8,7 @@ import { updateProfile } from "firebase/auth";
 const Register = () => {
    const {signUp,loginWithGoogle} = useContext(AuthContext);
    const navigate = useNavigate();
+   const location = useLocation();
    const [message, setMessage] = useState('');
     const handleRegister = e => {
         e.preventDefault();
