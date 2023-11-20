@@ -33,7 +33,7 @@ const Navbar = () => {
    },[theme])
     return (
 
-        <div>
+        <div className="">
             <div className="navbar ">
             {/* bg-base-100 */}
                 <div className="navbar-start">

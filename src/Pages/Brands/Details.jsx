@@ -41,8 +41,8 @@ const Details = () => {
                         <input type="radio" name="rating-1" className="mask mask-star-2 bg-red-600 ml-1 " />
                     </div>
                 </div>
-                <p>{description}</p>
-            
+                <p className="text-justify ml-5 mr-5">{description}</p>
+                
             </div>
 
         );
