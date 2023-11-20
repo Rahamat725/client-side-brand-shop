@@ -13,7 +13,8 @@ const Hp = () => {
         <Navbar></Navbar>
         <HpBanner></HpBanner>
         <div className="mt-10 ">
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 ">
+        {
+            products.length !== 0 ?  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 ">
             {
                 products.map(product =>
                     <div key={product._id} className="card lg:w-96  bg-base-100 shadow-xl">
@@ -45,6 +46,9 @@ const Hp = () => {
                 )
             }
         </div>
+
+            : <div className="border-4 border-green-500 p-10 text-center text-5xl"> <p>Products Are Not Available</p> </div>
+        }
         </div>
     </div>
     );
