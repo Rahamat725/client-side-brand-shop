@@ -16,7 +16,7 @@ const AddProduct = () => {
         const product = {brand,productName,type,price,description,rating,photo};
         console.log(product);
 
-        fetch('http://localhost:5000/brands', {
+        fetch('https://zentech-server.vercel.app/brands', {
           method: 'POST',
           headers:{
             'content-type':'application/json'

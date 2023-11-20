@@ -55,47 +55,47 @@ const router = createBrowserRouter([
       {
         path:'/apple',
         element: <Apple></Apple>,
-        loader: () => fetch('http://localhost:5000/brands')
+        loader: () => fetch('https://zentech-server.vercel.app/brands')
       },
       {
         path:'/boAt',
         element:<Boat></Boat>,
-        loader: () => fetch('http://localhost:5000/brands')
+        loader: () => fetch('https://zentech-server.vercel.app/brands')
       },
       {
         path:'/hp',
         element:<Hp></Hp>,
-        loader: () => fetch('http://localhost:5000/brands')
+        loader: () => fetch('https://zentech-server.vercel.app/brands')
       },
       {
         path:'/dell',
         element:<Dell></Dell>,
-        loader: () => fetch('http://localhost:5000/brands')
+        loader: () => fetch('https://zentech-server.vercel.app/brands')
       },
       {
         path:'/samsung',
         element: <Samsung></Samsung>,
-        loader: () => fetch('http://localhost:5000/brands')
+        loader: () => fetch('https://zentech-server.vercel.app/brands')
       },
       {
         path:'/sony',
         element: <Sony></Sony>,
-        loader: () => fetch('http://localhost:5000/brands')
+        loader: () => fetch('https://zentech-server.vercel.app/brands')
       },
       {
         path:'/productUpdate/:id',
         element: <PrivateRoute><Update></Update></PrivateRoute>,
-        loader:({params})=> fetch(`http://localhost:5000/brands/${params.id}`)
+        loader:({params})=> fetch(`https://zentech-server.vercel.app/brands/${params.id}`)
       },
       {
         path:'/details/:id',
         element: <PrivateRoute><Details></Details></PrivateRoute>,
-        loader:({params})=> fetch(`http://localhost:5000/brands/${params.id}`)
+        loader:({params})=> fetch(`https://zentech-server.vercel.app/brands/${params.id}`)
       },
       {
         path:'/mycarts',
         element:<PrivateRoute><MyCarts></MyCarts></PrivateRoute>,
-        loader: ()=> fetch('http://localhost:5000/mycarts')
+        loader: ()=> fetch('https://zentech-server.vercel.app/mycarts')
       }
     ]
   },

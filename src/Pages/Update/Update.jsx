@@ -20,7 +20,7 @@ console.log(loadedData)
         const updateProduct = {brand,productName,type,price,description,rating,photo};
         console.log(updateProduct);
 
-        fetch(`http://localhost:5000/brands/${_id}`, {
+        fetch(`https://zentech-server.vercel.app/brands/${_id}`, {
           method: 'PUT',
           headers:{
             'content-type':'application/json'

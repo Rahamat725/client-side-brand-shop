@@ -9,7 +9,7 @@ const Details = () => {
     console.log(loadedData)
 
     const handleAddToCart = () => {
-        fetch("http://localhost:5000/mycarts", {
+        fetch("https://zentech-server.vercel.app/mycarts", {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
