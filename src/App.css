@@ -1,6 +1,7 @@
 .dark-theme {
   --main-heading:#0092cd;
-  --second-heading:red;
+  --second-heading:green;
+  /* --paragraph-color:green; */
   --paragraph-color:#fff;
   --btn-bg-color:#0092cd;
   --btn-text-color:#111b20;
@@ -9,7 +10,8 @@
 
 .light-theme {
   --main-heading:#808080;
-  --second-heading:green;
+  --second-heading:#111b20;
+  /* --second-heading:green; */
   --paragraph-color:#111b20;
   /* --paragraph-color:#808080; */
   --btn-bg-color:#111b20;
@@ -30,8 +32,10 @@ p {
    color: var(--paragraph-color);
 }
 
-div{
-  background-color: var(--bg-color);
+div p{
+  /* background-color: var(--bg-color); */
+  color: var(--second-heading);
+  /* color: var(--btn-bg-color); */
 }
 
 li{

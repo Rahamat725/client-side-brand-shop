@@ -1,5 +1,6 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
+import SonyBanner from "./SonyBanner";
 
 
 const Sony = () => {
@@ -10,7 +11,8 @@ const Sony = () => {
     return (
 <div className="">
         <Navbar></Navbar>
-        <div className=" ">
+        <SonyBanner></SonyBanner>
+        <div className=" mt-10">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 ">
             {
                 products.map(product =>

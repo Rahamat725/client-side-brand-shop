@@ -7,7 +7,7 @@ const auth = getAuth(app);
 const gooleProvider = new GoogleAuthProvider();
 
 const AuthProvider = ({children}) => {
-    const [loading, setLoading] = useState(null);
+    const [loading, setLoading] = useState(true);
     const [user,setUser] = useState(null);
 
 

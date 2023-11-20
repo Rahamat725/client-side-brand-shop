@@ -1,5 +1,6 @@
 import { Link, useLoaderData } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
+import SamsungBanner from "./SamsungBanner";
 
 
 const Samsung = () => {
@@ -10,7 +11,8 @@ const Samsung = () => {
     return (
 <div className="">
         <Navbar></Navbar>
-        <div className=" ">
+        <SamsungBanner></SamsungBanner>
+        <div className="mt-10 ">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-2 ">
             {
                 products.map(product =>
